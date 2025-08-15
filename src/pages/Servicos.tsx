@@ -3,22 +3,15 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { ArrowRight, BarChart3, Cog, Building2, CheckCircle, TrendingUp, Shield, Clock } from "lucide-react";
-
 const Servicos = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-mobility-light to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Badge variant="outline" className="mb-4">Nossos Serviços</Badge>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Soluções Completas para Mobilidade Urbana
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Oferecemos um portfólio abrangente de serviços técnicos especializados, 
-              organizados em três pilares fundamentais para o transporte público eficiente.
-            </p>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6">Serviços que integram planejamento, gestão e operação de transporte público</h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">A LG Mobilidade Urbana oferece soluções completas para o setor de transporte público, atuando desde o diagnóstico inicial até a gestão operacional contínua.</p>
           </div>
         </div>
       </section>
@@ -32,7 +25,9 @@ const Servicos = () => {
                 <BarChart3 className="w-12 h-12 text-primary" />
                 <div>
                   <h2 className="text-3xl font-bold">Planejamento</h2>
-                  <p className="text-muted-foreground">Base técnica para decisões estratégicas eficazes</p>
+                  <p className="text-muted-foreground">Definimos estratégias sólidas e sustentáveis para o funcionamento do sistema.
+
+                </p>
                 </div>
               </div>
               
@@ -387,8 +382,6 @@ const Servicos = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Servicos;
