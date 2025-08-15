@@ -3,13 +3,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { ArrowRight, Target, Eye, Heart, CheckCircle, Award, Users, TrendingUp } from "lucide-react";
+import heroBg from "@/assets/quem-somos-hero-bg.jpg";
 
 const QuemSomos = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-mobility-light to-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        className="py-20 bg-gradient-to-br from-mobility-light/90 to-background/90 bg-cover bg-center bg-no-repeat relative"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-mobility-light/80 to-background/80"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <Badge variant="outline" className="mb-4">Quem Somos</Badge>
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
