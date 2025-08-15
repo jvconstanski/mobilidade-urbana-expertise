@@ -3,10 +3,19 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { ArrowRight, BarChart3, Cog, Building2, CheckCircle, TrendingUp, Shield, Clock } from "lucide-react";
+import servicesHeroBg from "@/assets/services-hero-bg.jpg";
 const Servicos = () => {
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-mobility-light to-background">
+      <section 
+        className="py-20 relative bg-gradient-to-br from-mobility-light to-background"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${servicesHeroBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <Badge variant="outline" className="mb-4">Nossos Serviços</Badge>
